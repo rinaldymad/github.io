@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RINALDYMAD</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Helvetica, sans-serif;
+      padding: 40px;
+      text-align: center;
+      transition: background-color 0.5s;
+    }
+
+    img {
+      width: 160px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #00ccff;
+    }
+
+    h1 {
+      color: #00ccff;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+
+    a.button, button.theme-button {
+      display: inline-block;
+      margin: 10px 10px 0;
+      padding: 10px 20px;
+      background-color: #00ccff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    a.button:hover, button.theme-button:hover {
+      background-color: #00aacc;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="53f5-6d85-45d1-97e1-38f81bd1d3d0.jpg" alt="Rinaldy Madya Putra">
+
+  <h1>Halo, saya Rinaldymad</h1>
+
+  <p>
+    DJ asal Bandung yang membawakan Deep Dubstep, UK Bass, dan UK Garage.<br>
+    Aktif bersama People Vibrations sejak 2019 memperkenalkan sound system culture.<br><br>
+    Terinspirasi oleh Shy FX, Mala, Hamdi, dan lainnya.
+  </p>
+
+  <a class="button" href="https://soundcloud.com/rinaldymad" target="_blank">SoundCloud Saya</a>
+  <button class="theme-button" onclick="gantiWarna()">Ganti Tema</button>
+
+  <script>
+    function gantiWarna() {
+      const warna = ["#111", "#1a1a1a", "#2c2c2c", "#003366", "#220022", "#1e3d59", "#0b0c10"];
+      const acak = warna[Math.floor(Math.random() * warna.length)];
+      document.body.style.backgroundColor = acak;
+    }
+  </script>
+
+</body>
+</html>
